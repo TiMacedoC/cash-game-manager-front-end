@@ -9,6 +9,9 @@
     }
   ],
   "compilerOptions": {
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
       "@/*": [
