@@ -1,6 +1,6 @@
 import { getLocales } from './locales/get-locales';
 
 export const I18Resources = {
-  pt: getLocales('pt'),
+  br: getLocales('br'),
   en: getLocales('en'),
 };

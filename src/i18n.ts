@@ -4,6 +4,6 @@ import { I18Resources } from './i18n-resources';
 
 i18n.use(initReactI18next).init({
   debug: true,
-  lng: 'pt',
+  lng: 'br',
   resources: I18Resources,
 });
