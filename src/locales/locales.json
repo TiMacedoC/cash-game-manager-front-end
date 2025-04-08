@@ -1,0 +1,26 @@
+{
+  "loginTitle": {
+    "pt": "Login",
+    "en": "Login"
+  },
+  "loginDescription": {
+    "pt": "Email, Senha",
+    "en": "Email, Password"
+  },
+  "password": {
+    "pt": "Senha",
+    "en": "Password"
+  },
+  "cancel": {
+    "pt": "Cancelar",
+    "en": "Cancel"
+  },
+  "accessYourAccount": {
+    "pt": "Acesse sua conta",
+    "en": "Access your account"
+  },
+  "accessYourAccountDesc": {
+    "pt": "Informe seu email e senha para acessar sua conta",
+    "en": "Enter your email and password to access your account"
+  }
+}
