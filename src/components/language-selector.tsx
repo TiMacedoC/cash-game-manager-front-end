@@ -28,7 +28,7 @@ export function LanguageSelector() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="cursor-pointer">
+        <Button variant="outline" className="cursor-pointer" size="default">
           <LucideGlobe />
         </Button>
       </DropdownMenuTrigger>

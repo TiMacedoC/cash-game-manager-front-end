@@ -1,19 +1,23 @@
 {
   "loginTitle": {
-    "br": "Entrar",
+    "br": "Login",
     "en": "Login"
   },
-  "loginDescription": {
-    "br": "Email, Senha",
-    "en": "Email, Password"
+  "email": {
+    "br": "Email",
+    "en": "Email"
   },
   "password": {
     "br": "Senha",
     "en": "Password"
   },
-  "cancel": {
+  "cancelButton": {
     "br": "Cancelar",
     "en": "Cancel"
+  },
+  "loginButton": {
+    "br": "Entrar",
+    "en": "Login"
   },
   "accessYourAccount": {
     "br": "Acesse sua conta",
@@ -30,5 +34,37 @@
   "selectLanguage": {
     "br": "Selecione seu idioma",
     "en": "Select your language"
+  },
+  "toggleThemeSpan": {
+    "br": "Mudar tema",
+    "en": "Toggle theme"
+  },
+  "lightTheme": {
+    "br": "Claro",
+    "en": "Light"
+  },
+  "darkTheme": {
+    "br": "Escuro",
+    "en": "Dark"
+  },
+  "systemTheme": {
+    "br": "Sistema",
+    "en": "System"
+  },
+  "forgotPassword": {
+    "br": "Esqueceu sua senha?",
+    "en": "Forgot your password?"
+  },
+  "enterWithGoogle": {
+    "br": "Entrar com Google",
+    "en": "Login with Google"
+  },
+  "doNotHaveAnAccount": {
+    "br": "Não tem uma conta?",
+    "en": "Don't have an account?"
+  },
+  "signUp": {
+    "br": "Cadastre-se",
+    "en": "Sign up"
   }
 }

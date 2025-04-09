@@ -1,13 +1,11 @@
-import { LanguageSelector } from '@/components/language-selector';
-import { LoginCard } from '@/components/login-card';
+import { LoginForm } from '@/components/login-form';
 
-export function SignIn() {
+export function SignInPage() {
   return (
-    <main className="h-screen flex w-full">
-      <div className="bg-sidebar-accent w-full h-full flex p-16"></div>
-      <section className="flex items-center justify-center bg-background h-full max-w-3xl w-full p-4">
-        <LoginCard />
-      </section>
-    </main>
+    <div className="flex min-h-svh w-full items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm">
+        <LoginForm />
+      </div>
+    </div>
   );
 }
