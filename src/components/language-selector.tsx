@@ -4,53 +4,46 @@ import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import {
+  AvailableLanguagesEnum,
+  availableLanguagesInfo,
+} from '@/locales/locales';
+import { LucideGlobe } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-
-const languages = [
-  {
-    code: 'br',
-    flag: 'src/assets/flags/brazil.svg',
-    country: 'Brazil',
-    description: 'Brazilian-Portuguese',
-    nativeDescription: 'Português do Brasil',
-  },
-  {
-    code: 'en',
-    flag: 'src/assets/flags/united-states.svg',
-    country: 'United States',
-    description: 'English',
-    nativeDescription: 'English',
-  },
-];
-
-// const changeLanguage = () => {
-//   console.log('\n❓ ~changeLanguage:', '❗\n');
-// };
 
 export function LanguageSelector() {
   const [position, setPosition] = React.useState('bottom');
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (code: AvailableLanguagesEnum) => {
+    i18n.changeLanguage(code);
+  };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline">{t('language')}</Button>
+        <Button variant="outline" className="cursor-pointer">
+          <LucideGlobe />
+        </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-56">
         <DropdownMenuLabel>{t('selectLanguage')}</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuRadioGroup value={position} onValueChange={setPosition}>
-          {languages.map((lng) => (
-            <DropdownMenuRadioItem value={lng.code}>
+          {availableLanguagesInfo.map((lng) => (
+            <DropdownMenuItem
+              className="cursor-pointer"
+              onClick={() => changeLanguage(lng.code)}
+            >
               <img src={lng.flag} alt={`Flag of ${lng.country}`} />
               {lng.nativeDescription}
-            </DropdownMenuRadioItem>
+            </DropdownMenuItem>
           ))}
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>

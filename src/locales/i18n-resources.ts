@@ -1,4 +1,4 @@
-import { getLocales } from './get-locales';
+import { getLocales } from './locales';
 
 export const I18Resources = {
   br: getLocales('br'),
