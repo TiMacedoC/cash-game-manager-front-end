@@ -1,0 +1,34 @@
+{
+  "loginTitle": {
+    "br": "Entrar",
+    "en": "Login"
+  },
+  "loginDescription": {
+    "br": "Email, Senha",
+    "en": "Email, Password"
+  },
+  "password": {
+    "br": "Senha",
+    "en": "Password"
+  },
+  "cancel": {
+    "br": "Cancelar",
+    "en": "Cancel"
+  },
+  "accessYourAccount": {
+    "br": "Acesse sua conta",
+    "en": "Access your account"
+  },
+  "accessYourAccountDesc": {
+    "br": "Informe seu email e senha para acessar sua conta",
+    "en": "Enter your email and password to access your account"
+  },
+  "language": {
+    "br": "Idioma",
+    "en": "Language"
+  },
+  "selectLanguage": {
+    "br": "Selecione seu idioma",
+    "en": "Select your language"
+  }
+}
