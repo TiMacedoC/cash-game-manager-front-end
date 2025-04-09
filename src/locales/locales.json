@@ -1,6 +1,6 @@
 {
   "loginTitle": {
-    "br": "Login",
+    "br": "Entrar",
     "en": "Login"
   },
   "loginDescription": {
@@ -22,5 +22,13 @@
   "accessYourAccountDesc": {
     "br": "Informe seu email e senha para acessar sua conta",
     "en": "Enter your email and password to access your account"
+  },
+  "language": {
+    "br": "Idioma",
+    "en": "Language"
+  },
+  "selectLanguage": {
+    "br": "Selecione seu idioma",
+    "en": "Select your language"
   }
 }

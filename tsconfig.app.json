@@ -31,6 +31,8 @@
     "noUncheckedSideEffectImports": true
   },
   "include": [
-    "src"
+    "src",
+    "src/components",
+    "src/custom.d.ts"
   ]
 }

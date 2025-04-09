@@ -23,4 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# Local env files
 .env
+
+# Temporary files
+tmp/
