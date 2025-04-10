@@ -7,7 +7,9 @@ export function HeaderButtons() {
       <div className="mr-3 ">
         <ModeToggle />
       </div>
-      <LanguageSelector />
+      <div>
+        <LanguageSelector />
+      </div>
     </header>
   );
 }
