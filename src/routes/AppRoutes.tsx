@@ -1,8 +1,6 @@
-import ProtectedRoute from '@/components/protected-route';
 import HomePage from '@/pages/home';
 import { SignInPage } from '@/pages/signin';
-import { Settings } from 'lucide-react';
-import { createBrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
 const routes = [
   {

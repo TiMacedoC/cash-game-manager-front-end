@@ -1,5 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
-import { HeaderButtons } from './components/header-buttons';
+import { Header } from './components/header';
 import { ThemeProvider } from './components/theme-provider';
 import AppRoutes from './routes/AppRoutes';
 
@@ -7,7 +7,7 @@ export function App() {
   return (
     <>
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <HeaderButtons />
+        <Header />
         <BrowserRouter>
           <AppRoutes />
         </BrowserRouter>
