@@ -66,5 +66,13 @@
   "signUp": {
     "br": "Cadastre-se",
     "en": "Sign up"
+  },
+  "allRightsReserved": {
+    "br": "Todos os direitos reservados",
+    "en": "All rights reserved"
+  },
+  "contact": {
+    "br": "Contato",
+    "en": "Contact"
   }
 }

@@ -3,7 +3,7 @@ import { ModeToggle } from './mode-toggle';
 
 export function Header() {
   return (
-    <header className="flex justify-end p-3 ">
+    <header className="flex justify-end p-3 min-h-[5vh]">
       <div className="mr-3 ">
         <ModeToggle />
       </div>
