@@ -5,6 +5,6 @@ import { AvailableLanguagesEnum } from './locales';
 
 i18n.use(initReactI18next).init({
   debug: true,
-  lng: AvailableLanguagesEnum.BrazilianPortuguese,
+  fallbackLng: AvailableLanguagesEnum.BrazilianPortuguese,
   resources: I18Resources,
 });
