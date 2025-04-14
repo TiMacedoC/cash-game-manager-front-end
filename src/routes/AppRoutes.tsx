@@ -1,19 +1,19 @@
-import HomePage from '@/pages/home';
+import DashboardPage from '@/pages/dashboard';
 import { SignInPage } from '@/pages/signin';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 const routes = [
   {
     path: '*',
-    element: <Navigate to="/home" />,
+    element: <Navigate to="/dashboard" />,
   },
   {
     path: '/login',
     element: <SignInPage />,
   },
   {
-    path: '/home',
-    element: <HomePage />,
+    path: '/dashboard',
+    element: <DashboardPage />,
   },
 ];
 
