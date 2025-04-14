@@ -22,6 +22,7 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       'unused-imports/no-unused-imports': 'warn',
+      '@typescript-eslint/no-unused-vars': 'warn',
       'react-refresh/only-export-components': [
         'warn',
         { allowConstantExport: true },
@@ -31,3 +32,8 @@ export default tseslint.config(
 
   },
 )
+
+
+// 'HeaderInfo' is declared but its value is never read.ts(6133)
+// 'HeaderInfo' is defined but never used.eslint@typescript-eslint/no-unused-vars
+// 'HeaderInfo' is defined but never used.eslintunused-imports/no-unused-imports

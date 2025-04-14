@@ -1,3 +1,4 @@
+import SidebarLayout from '@/components/sidebar-layout';
 import DashboardPage from '@/pages/dashboard';
 import { SignInPage } from '@/pages/signin';
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -13,7 +14,7 @@ const routes = [
   },
   {
     path: '/dashboard',
-    element: <DashboardPage />,
+    element: <SidebarLayout children={<DashboardPage />} />,
   },
 ];
 
