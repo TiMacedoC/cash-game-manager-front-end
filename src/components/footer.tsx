@@ -9,9 +9,19 @@ export function FooterInfo() {
   ];
 
   return (
-    <footer>
-      <div className="w-full mx-auto max-w-screen p-4 md:flex md:items-center md:justify-between ">
-        <span className="text-sm sm:text-center ">{copyright}</span>
+    <footer className="">
+      <div
+        className="
+      w-full
+      mx-auto
+      max-w-screen
+      p-4
+      sm:flex
+      sm:items-center
+      sm:justify-between
+      "
+      >
+        <span className="text-sm sm:text-center">{copyright}</span>
         <ul className="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
           {links.map((l) => (
             <li>
