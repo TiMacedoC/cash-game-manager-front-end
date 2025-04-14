@@ -1,6 +1,4 @@
-import { cn } from '@/lib/utils';
 import { useTranslation } from 'react-i18next';
-// import { Footer, FooterBottom } from './ui/footer';
 
 export function FooterInfo() {
   const { t } = useTranslation();
@@ -11,13 +9,17 @@ export function FooterInfo() {
   ];
 
   return (
-    <footer className="min-h-[5vh]">
+    <footer>
       <div className="w-full mx-auto max-w-screen p-4 md:flex md:items-center md:justify-between ">
         <span className="text-sm sm:text-center ">{copyright}</span>
         <ul className="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
           {links.map((l) => (
             <li>
-              <a href={l.href} className="hover:underline me-4 md:me-6">
+              <a
+                href={l.href}
+                target="_blank"
+                className="hover:underline me-4 md:me-6"
+              >
                 {l.text}
               </a>
             </li>
