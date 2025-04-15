@@ -1,7 +1,10 @@
 import SidebarLayout from '@/components/sidebar-layout';
+import { LoadingSpinner } from '@/components/ui/loading-spinner';
 import HomePage from '@/pages/home';
 import { SignInPage } from '@/pages/signin';
+import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
+const PlayersPage = lazy(() => import('@/pages/players'));
 
 const routes = [
   {
@@ -14,15 +17,27 @@ const routes = [
   },
   {
     path: '/home',
-    element: <SidebarLayout children={<HomePage />} />,
+    element: (
+      <Suspense fallback={<LoadingSpinner full={true} size="100" />}>
+        <SidebarLayout children={<HomePage />} />
+      </Suspense>
+    ),
+  },
+  {
+    path: '/players',
+    element: (
+      <Suspense fallback={<LoadingSpinner full={true} size="100" />}>
+        <SidebarLayout children={<PlayersPage />} />
+      </Suspense>
+    ),
   },
 ];
 
 const AppRoutes = () => {
   return (
     <Routes>
-      {routes.map((route) => (
-        <Route path={route.path} element={route.element} />
+      {routes.map((route, idx) => (
+        <Route key={idx} path={route.path} element={route.element} />
       ))}
     </Routes>
   );

@@ -35,12 +35,12 @@ export function AppSidebar() {
   const items = [
     {
       title: t('home'),
-      url: '#',
+      url: '/home',
       icon: Home,
     },
     {
       title: t('players'),
-      url: '#',
+      url: '/players',
       icon: Users,
     },
     {
@@ -53,51 +53,51 @@ export function AppSidebar() {
       url: '#',
       icon: CalendarDays,
     },
-    {
-      title: t('newSession'),
-      url: '#',
-      icon: PlusCircle,
-    },
+    // {
+    //   title: t('newSession'),
+    //   url: '#',
+    //   icon: PlusCircle,
+    // },
     {
       title: t('settings'),
       url: '#',
       icon: Settings,
     },
-    {
-      title: t('history'),
-      url: '#',
-      icon: Clock,
-    },
-    {
-      title: t('statistics'),
-      url: '#',
-      icon: BarChart2,
-    },
-    {
-      title: t('buyIns'),
-      url: '#',
-      icon: DollarSign,
-    },
-    {
-      title: t('payouts'),
-      url: '#',
-      icon: Wallet,
-    },
-    {
-      title: t('notes'),
-      url: '#',
-      icon: FileText,
-    },
+    // {
+    //   title: t('history'),
+    //   url: '#',
+    //   icon: Clock,
+    // },
+    // {
+    //   title: t('statistics'),
+    //   url: '#',
+    //   icon: BarChart2,
+    // },
+    // {
+    //   title: t('buyIns'),
+    //   url: '#',
+    //   icon: DollarSign,
+    // },
+    // {
+    //   title: t('payouts'),
+    //   url: '#',
+    //   icon: Wallet,
+    // },
+    // {
+    //   title: t('notes'),
+    //   url: '#',
+    //   icon: FileText,
+    // },
     {
       title: t('leaderboard'),
       url: '#',
       icon: Trophy,
     },
-    {
-      title: t('chips'),
-      url: '#',
-      icon: CircleDollarSign,
-    },
+    // {
+    //   title: t('chips'),
+    //   url: '#',
+    //   icon: CircleDollarSign,
+    // },
   ];
 
   const logoutItem = {
