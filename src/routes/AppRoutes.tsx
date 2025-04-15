@@ -1,20 +1,20 @@
 import SidebarLayout from '@/components/sidebar-layout';
-import DashboardPage from '@/pages/dashboard';
+import HomePage from '@/pages/home';
 import { SignInPage } from '@/pages/signin';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 const routes = [
   {
     path: '*',
-    element: <Navigate to="/dashboard" />,
+    element: <Navigate to="/home" />,
   },
   {
     path: '/login',
     element: <SignInPage />,
   },
   {
-    path: '/dashboard',
-    element: <SidebarLayout children={<DashboardPage />} />,
+    path: '/home',
+    element: <SidebarLayout children={<HomePage />} />,
   },
 ];
 
