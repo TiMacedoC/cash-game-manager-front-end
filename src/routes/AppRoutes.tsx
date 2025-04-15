@@ -1,3 +1,4 @@
+import SidebarLayout from '@/components/sidebar-layout';
 import HomePage from '@/pages/home';
 import { SignInPage } from '@/pages/signin';
 import { Navigate, Route, Routes } from 'react-router-dom';
@@ -13,7 +14,7 @@ const routes = [
   },
   {
     path: '/home',
-    element: <HomePage />,
+    element: <SidebarLayout children={<HomePage />} />,
   },
 ];
 

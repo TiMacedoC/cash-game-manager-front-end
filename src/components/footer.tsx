@@ -24,7 +24,7 @@ export function FooterInfo() {
         <span className="text-sm sm:text-center">{copyright}</span>
         <ul className="flex flex-wrap items-center mt-3 text-sm sm:mt-0">
           {links.map((l) => (
-            <li>
+            <li key={l.text}>
               <a
                 href={l.href}
                 target="_blank"

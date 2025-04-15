@@ -74,5 +74,65 @@
   "contact": {
     "br": "Contato",
     "en": "Contact"
+  },
+  "menu": {
+    "br": "Menu",
+    "en": "Menu"
+  },
+  "home": {
+    "br": "Início",
+    "en": "Home"
+  },
+  "players": {
+    "br": "Jogadores",
+    "en": "Players"
+  },
+  "dealers": {
+    "br": "Dealers",
+    "en": "Dealers"
+  },
+  "sessions": {
+    "br": "Sessões",
+    "en": "Sessions"
+  },
+  "newSession": {
+    "br": "Nova Sessão",
+    "en": "New Session"
+  },
+  "settings": {
+    "br": "Configurações",
+    "en": "Settings"
+  },
+  "history": {
+    "br": "Histórico",
+    "en": "History"
+  },
+  "statistics": {
+    "br": "Estatísticas",
+    "en": "Statistics"
+  },
+  "buyIns": {
+    "br": "Buy-ins",
+    "en": "Buy-ins"
+  },
+  "payouts": {
+    "br": "Payouts",
+    "en": "Payouts"
+  },
+  "notes": {
+    "br": "Notas",
+    "en": "Notes"
+  },
+  "leaderboard": {
+    "br": "Classificação",
+    "en": "Leaderboard"
+  },
+  "chips": {
+    "br": "Fichas",
+    "en": "Chips"
+  },
+  "logout": {
+    "br": "Sair",
+    "en": "Logout"
   }
 }

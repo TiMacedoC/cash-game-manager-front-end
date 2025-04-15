@@ -1,7 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { App } from './App';
-import './global.css';
+import './index.css';
 import './locales/i18n.config';
 
 createRoot(document.getElementById('root')!).render(

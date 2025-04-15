@@ -6,15 +6,15 @@ import AppRoutes from './routes/AppRoutes';
 
 export function App() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <Header />
-        <div className="flex-auto overflow-auto ">
+        <div className="flex-auto overflow-y-auto ">
           <BrowserRouter>
+            <Header />
             <AppRoutes />
+            <FooterInfo />
           </BrowserRouter>
         </div>
-        <FooterInfo />
       </ThemeProvider>
     </div>
   );
