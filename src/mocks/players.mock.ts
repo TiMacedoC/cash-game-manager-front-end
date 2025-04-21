@@ -8,7 +8,7 @@ export type Player = {
   availableFunds: number;
   status: 'pending' | 'active' | 'blocked';
   email: string;
-  avatar: string;
+  avatar?: string;
 };
 
 export const mockedPlayers: Player[] = [
@@ -22,7 +22,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 100,
     status: 'active',
     email: 'm@example.com',
-    avatar: 'https://cataas.com/cat/says/Pedrinho',
+    avatar: undefined,
   },
   {
     id: 'a1b2c3d4',
@@ -34,7 +34,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 50,
     status: 'active',
     email: 'lucas@example.com',
-    avatar: 'https://cataas.com/cat/says/Luquinhas',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'e5f6g7h8',
@@ -46,7 +46,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 80,
     status: 'pending',
     email: 'mariana@example.com',
-    avatar: 'https://cataas.com/cat/says/Mari',
+    avatar: undefined,
   },
   {
     id: 'i9j0k1l2',
@@ -58,7 +58,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 120,
     status: 'active',
     email: 'carlos@example.com',
-    avatar: 'https://cataas.com/cat/says/Carlão',
+    avatar: 'cat.jpeg',
   },
   {
     id: 'm3n4o5p6',
@@ -70,7 +70,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 200,
     status: 'blocked',
     email: 'fernanda@example.com',
-    avatar: 'https://cataas.com/cat/says/Nanda',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'q7r8s9t0',
@@ -82,7 +82,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 75,
     status: 'active',
     email: 'bruno@example.com',
-    avatar: 'https://cataas.com/cat/says/Bruninho',
+    avatar: undefined,
   },
   {
     id: 'u1v2w3x4',
@@ -94,7 +94,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 90,
     status: 'pending',
     email: 'aline@example.com',
-    avatar: 'https://cataas.com/cat/says/Alinoca',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'y5z6a7b8',
@@ -106,7 +106,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 0,
     status: 'blocked',
     email: 'felipe@example.com',
-    avatar: 'https://cataas.com/cat/says/Lipe',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'c9d0e1f2',
@@ -118,7 +118,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 30,
     status: 'active',
     email: 'juliana@example.com',
-    avatar: 'https://cataas.com/cat/says/Juju',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'g3h4i5j6',
@@ -130,7 +130,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 10,
     status: 'pending',
     email: 'rafael@example.com',
-    avatar: 'https://cataas.com/cat/says/Rafa',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'k7l8m9n0',
@@ -142,7 +142,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 300,
     status: 'active',
     email: 'beatriz@example.com',
-    avatar: 'https://cataas.com/cat/says/Bia',
+    avatar: undefined,
   },
   {
     id: 'o1p2q3r4',
@@ -154,7 +154,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 400,
     status: 'blocked',
     email: 'diego@example.com',
-    avatar: 'https://cataas.com/cat/says/Didi',
+    avatar: 'src/assets/images/profile-pic.jpg',
   },
   {
     id: 's5t6u7v8',
@@ -166,7 +166,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 20,
     status: 'active',
     email: 'larissa@example.com',
-    avatar: 'https://cataas.com/cat/says/Lari',
+    avatar: undefined,
   },
   {
     id: 'w9x0y1z2',
@@ -178,7 +178,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 60,
     status: 'pending',
     email: 'tiago@example.com',
-    avatar: 'https://cataas.com/cat/says/Tigao',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'a3b4c5d6',
@@ -190,7 +190,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 150,
     status: 'active',
     email: 'camila@example.com',
-    avatar: 'https://cataas.com/cat/says/Cami',
+    avatar: 'src/assets/images/profile-pic.jpg',
   },
   {
     id: 'e7f8g9h0',
@@ -202,7 +202,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 75,
     status: 'blocked',
     email: 'vinicius@example.com',
-    avatar: 'https://cataas.com/cat/says/Vini',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'i1j2k3l4',
@@ -214,7 +214,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 95,
     status: 'active',
     email: 'renata@example.com',
-    avatar: 'https://cataas.com/cat/says/Rê',
+    avatar: 'src/assets/images/profile-pic.jpg',
   },
   {
     id: 'm5n6o7p8',
@@ -226,7 +226,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 0,
     status: 'pending',
     email: 'eduardo@example.com',
-    avatar: 'https://cataas.com/cat/says/Dudu',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'q9r0s1t2',
@@ -238,7 +238,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 220,
     status: 'active',
     email: 'patricia@example.com',
-    avatar: 'https://cataas.com/cat/says/Pathy',
+    avatar: 'src/assets/images/pic.jpg',
   },
   {
     id: 'u3v4w5x6',
@@ -250,6 +250,6 @@ export const mockedPlayers: Player[] = [
     availableFunds: 180,
     status: 'blocked',
     email: 'joao@example.com',
-    avatar: 'https://cataas.com/cat/says/JH',
+    avatar: 'src/assets/images/profile-pic.jpg',
   },
 ];

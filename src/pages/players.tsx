@@ -1,19 +1,16 @@
-import { columns } from '@/components/table/columns';
-import { DataTable } from '@/components/table/data-table';
-import { Progress } from '@/components/ui/progress';
+import { PlayersList } from '@/components/players/players-list';
 import { mockedPlayers, Player } from '@/mocks/players.mock';
-import { lazy, Suspense } from 'react';
 
-async function getData(): Promise<Player[]> {
+function getData(): Player[] {
   return mockedPlayers;
 }
 
-export default async function PlayersPage() {
-  const data = await getData();
+export default function PlayersPage() {
+  const data = getData();
 
   return (
     <div className="container mx-auto py-10">
-      <DataTable columns={columns} data={data} />
+      <PlayersList data={data} />
     </div>
   );
 }

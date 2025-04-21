@@ -12,7 +12,7 @@ export function App() {
           <BrowserRouter>
             <Header />
             <AppRoutes />
-            <FooterInfo />
+            {/* <FooterInfo /> */}
           </BrowserRouter>
         </div>
       </ThemeProvider>
