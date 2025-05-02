@@ -2,7 +2,7 @@ import { PlayersList } from '@/components/players/players-list';
 import { mockedPlayers, Player } from '@/mocks/players.mock';
 
 function getData(): Player[] {
-  return mockedPlayers;
+  return mockedPlayers.slice(0, 3);
 }
 
 export default function PlayersPage() {

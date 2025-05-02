@@ -8,7 +8,7 @@ export function App() {
   return (
     <div className="flex flex-col">
       <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
-        <div className="flex-auto overflow-y-auto ">
+        <div className="flex-auto">
           <BrowserRouter>
             <Header />
             <AppRoutes />

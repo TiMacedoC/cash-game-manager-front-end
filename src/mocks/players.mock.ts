@@ -14,7 +14,7 @@ export type Player = {
 export const mockedPlayers: Player[] = [
   {
     id: '728ed52f',
-    name: 'Pedro Costa Santos',
+    name: 'pedro Costa Santos',
     nickName: 'Pedrinho',
     phoneNumber: '99999999999',
     CPF: '12345678909',

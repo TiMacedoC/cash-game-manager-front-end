@@ -11,7 +11,7 @@ export default function SidebarLayout({
 
   return (
     <SidebarProvider
-      className="flex h-screen"
+      className="flex sm:min-h-[90svh]"
       open={open}
       onOpenChange={setOpen}
     >
