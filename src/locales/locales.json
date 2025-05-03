@@ -87,6 +87,10 @@
     "br": "Jogadores",
     "en": "Players"
   },
+  "player": {
+    "br": "Jogador",
+    "en": "Player"
+  },
   "dealers": {
     "br": "Dealers",
     "en": "Dealers"
@@ -134,5 +138,29 @@
   "logout": {
     "br": "Sair",
     "en": "Logout"
+  },
+  "balance": {
+    "br": "Saldo",
+    "en": "Balance"
+  },
+  "name": {
+    "br": "Nome",
+    "en": "Name"
+  },
+  "status": {
+    "br": "Status",
+    "en": "Status"
+  },
+  "active": {
+    "br": "Ativo",
+    "en": "Active"
+  },
+  "blocked": {
+    "br": "Bloqueado",
+    "en": "Blocked"
+  },
+  "pending": {
+    "br": "Pendente",
+    "en": "Pending"
   }
 }

@@ -1,8 +1,8 @@
-import { PlayersList } from '@/components/players/players-list';
+import { PlayersTable } from '@/components/table/players-table';
 import { mockedPlayers, Player } from '@/mocks/players.mock';
 
 function getData(): Player[] {
-  return mockedPlayers.slice(0, 3);
+  return mockedPlayers.slice(0);
 }
 
 export default function PlayersPage() {
@@ -10,7 +10,7 @@ export default function PlayersPage() {
 
   return (
     <div className="container mx-auto py-10">
-      <PlayersList data={data} />
+      <PlayersTable players={data} />
     </div>
   );
 }

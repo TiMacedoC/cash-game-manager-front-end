@@ -31,7 +31,7 @@ export const mockedPlayers: Player[] = [
     phoneNumber: '98888777777',
     CPF: '98765432100',
     birthDate: '1990-01-20T00:00:00Z',
-    availableFunds: 50,
+    availableFunds: -32.34,
     status: 'active',
     email: 'lucas@example.com',
     avatar: 'src/assets/images/pic.jpg',
@@ -70,7 +70,7 @@ export const mockedPlayers: Player[] = [
     availableFunds: 200,
     status: 'blocked',
     email: 'fernanda@example.com',
-    avatar: 'src/assets/images/pic.jpg',
+    avatar: 'https://cataas.com/cat',
   },
   {
     id: 'q7r8s9t0',
